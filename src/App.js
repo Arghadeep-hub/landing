@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
+import PopUpBox from "./component/PopUpBox/PopUpBox";
 import Home from './Home.jsx';
 import Singup from './Singup.jsx';
 import Navbar from './Navbar';
