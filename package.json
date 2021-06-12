@@ -16,8 +16,12 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-spinners": "^0.10.6",
+<<<<<<< HEAD
     "react-spring": "^9.2.3",
     "styled-components": "^5.3.0",
+=======
+    "sweetalert": "^2.1.2",
+>>>>>>> e295c433677886e16b401434c9f0f8a592e6a0cc
     "swiper": "^6.6.2",
     "web-vitals": "^1.1.2"
   },
