@@ -88,6 +88,9 @@
   color: whitesmoke;
   outline: none;
 }
+.gallery .popup{
+  
+}
 @media screen and (max-width: 786px) {
   .gallery img{
     border-bottom-left-radius: 0px;

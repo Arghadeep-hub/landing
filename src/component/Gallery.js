@@ -1,15 +1,29 @@
 import React, { useState } from 'react';
 import './Gallery.css';
+import './Popup.css';
 import Menu from './Menu';
+import Popup from './Popup.jsx';
+
 
 function Gallery() {
     const [items, setItems] = useState(Menu);
+    const [popup, setPopup] = useState(null);
+    const [activePopup, setActivePopup] = useState("popupcloseclass");
+
     const filterItem = (catItem) => {
         const updatedItems = Menu.filter((curElem) => {
             return curElem.category === catItem;
         });
         setItems(updatedItems);
     }
+    const handlePopup = (id) => {
+        setPopup(id);
+        setActivePopup("popupshowingclass");
+    }
+    const handelPopupClose = () => {
+        setActivePopup("popupcloseclass")
+    }
+
     return (
         <div className="gallery">
             <div className="menu-tabs container col-md-12 col-12">
@@ -28,9 +42,9 @@ function Gallery() {
                         <div className="row my-5">
                             {
                                 items.map((elem) => {
-                                    const { image, name, description, date, link } = elem;
+                                    const { id, image, name, description, date, link } = elem;
                                     return (
-                                        <div className="item1 col-md-6 col-lg-6 col-lg-6 col-xl-4 my-3">
+                                        <div key={id} className="item1 col-md-6 col-lg-6 col-lg-6 col-xl-4 my-3">
                                             <div className="row item-inside">
                                                 {/*images*/}
                                                 <div className="col-12 col-md-12 col-lg-4 img-div">
@@ -45,19 +59,21 @@ function Gallery() {
                                                     <div className="menu-price-book">
                                                         <div className="price-book-divide d-flex justify-content-between">
                                                             <h2>Date: {date}</h2>
-                                                            <a href={link}>
-                                                                <button className="btn btn-primary py-2">click</button>
-                                                            </a>
+                                                            <button className="btn btn-primary py-2" onClick={() => { handlePopup(id) }}>Info</button>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div className="popup">
+                                                {
+                                                    popup === id ? (<Popup activePopup={activePopup} handelPopup={handelPopupClose} popupfadingclass="popupfadingclass" name={name} description={description} link={link} />) : null
+                                                }
+                                            </div>
                                         </div>
                                     )
                                 })
                             }
-
                         </div>
                     </div>
                 </div>
