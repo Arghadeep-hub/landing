@@ -1,22 +1,72 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import MuiDialogTitle from '@material-ui/core/DialogTitle';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
+import Typography from '@material-ui/core/Typography';
 
-function Popup({ activePopup, handelPopup, popupfadingclass, name, description, link }) {
+const styles = (theme) => ({
+    root: {
+        margin: 0,
+        padding: theme.spacing(2),
+    },
+    closeButton: {
+        position: 'absolute',
+        right: theme.spacing(1),
+        top: theme.spacing(1),
+        color: theme.palette.grey[500],
+    },
+});
+
+const DialogTitle = withStyles(styles)((props) => {
+    const { children, classes, onClose, ...other } = props;
+    return (
+        <MuiDialogTitle disableTypography className={classes.root} {...other}>
+            <Typography variant="h6">{children}</Typography>
+            {onClose ? (
+                <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
+                    <CloseIcon />
+                </IconButton>
+            ) : null}
+        </MuiDialogTitle>
+    );
+});
+
+const DialogContent = withStyles((theme) => ({
+    root: {
+        padding: theme.spacing(2),
+    },
+}))(MuiDialogContent);
+
+const DialogActions = withStyles((theme) => ({
+    root: {
+        margin: 0,
+        padding: theme.spacing(1),
+    },
+}))(MuiDialogActions);
+
+function Popup({ handleClose, open, name, description, link }) {
 
     return (
-        <div className="container">
-            <div className={`center popup ${popupfadingclass} ${activePopup}`}>
-                <div className="cancel-icon" onClick={handelPopup}>
-                    <i class="fas fa-times"></i>
-                </div>
-                <div className="name">
-                    <h1>{name}</h1>
-                </div>
-                <div className="title">
-                    <p>{description}</p>
-                </div>
-                <button href={link} class="btn btn-success py-2">Preview</button>
-            </div>
-        </div>
+        <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+            <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                {name}
+            </DialogTitle>
+            <DialogContent dividers>
+                <Typography gutterBottom>
+                    {description}
+                </Typography>
+            </DialogContent>
+            <DialogActions>
+                <Button href={link} autoFocus onClick={handleClose} variant="contained">
+                    Preview
+                </Button>
+            </DialogActions>
+        </Dialog>
     )
 }
 export default Popup;

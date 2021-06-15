@@ -1,9 +1,9 @@
 import { Avatar, IconButton } from '@material-ui/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from './images/logo.png';
-
 import './Footer.css';
+
+const logo = "https://i.ibb.co/4sZ6pd7/logo.png";
 function Footer() {
     return (
         <div className="text-white pt-5 pb-4 footer">
@@ -12,7 +12,7 @@ function Footer() {
                 <div className="row text-center text-md-left">
 
                     <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <div className=" logo" style={{ color: "#ddd", textShadow: "0.2rem 0.3rem 0.1rem #111", letterSpacing: "0.5rem" }}><IconButton><Avatar src={Logo} /></IconButton>REPL</div>
+                        <div className=" logo" style={{ color: "#ddd", textShadow: "0.2rem 0.3rem 0.1rem #111", letterSpacing: "0.5rem" }}><IconButton><Avatar src={logo} /></IconButton>REPL</div>
                         <p>In our development community, we focused on brushing up skills, team management, etc. <br />
                         Mainly we provide knowledge on various technologies and try to build influential communication network among all programmer by online meetings.</p>
 

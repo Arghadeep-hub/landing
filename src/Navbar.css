@@ -56,7 +56,7 @@ nav {
   -moz-box-shadow: inset 5px 5px 5px -1px #094b6549;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .signup {
     left: 0;
     top: 20px;
@@ -133,7 +133,7 @@ nav {
   }
   .nav-links.open {
     clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(1500px at 90% -20%);
+    -webkit-clip-path: circle(2000px at 90% -20%);
     pointer-events: all;
   }
   .nav-links li {

@@ -1,4 +1,6 @@
-const Menu = [
+import Typography from '@material-ui/core/Typography';
+
+const GalleryComp = [
     {
         id: 1,
         image: "https://blog.corp-site.envato.com/cdn-cgi/image/width=1200,quality=95,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png",
@@ -6,6 +8,7 @@ const Menu = [
         category: "front",
         date: "20-11-2020",
         link: "/singup",
+        intro: "Readable and short introduction of this Projct",
         description: "This is a Front-end project. Made by all community members"
     },
     {
@@ -15,16 +18,19 @@ const Menu = [
         category: "back",
         date: "15-12-2021",
         link: "#",
+        intro: "Readable and short introduction of this Projct",
         description: "This is a Back-end Project. Made by our back-end developer."
     },
     {
         id: 3,
         image: "https://raw.githubusercontent.com/Arghadeep-hub/Portfolio/main/img/webdev.jpg",
-        name: "Web Development",
+        name: "Web Dev",
         category: "front",
         date: "18-01-2021",
         link: "#",
-        description: "Lorem ipsum dolor sit."
+        intro: "Readable and short introduction of this Projct",
+        description: <Typography>A successful website does three things: <br /> It attracts the right kinds of visitors. Guides them to the main services or product you offer. Collect Contact details for future ongoing relation.
+        </Typography>
     },
     {
         id: 4,
@@ -33,6 +39,7 @@ const Menu = [
         category: "front",
         date: "16-02-2021",
         link: "https://arghadeep-hub.github.io/calculator/",
+        intro: "Readable and short introduction of this Projct",
         description: "Measuring programming progress by lines of code is like measuring aircraft building progress by weight."
     },
     {
@@ -42,6 +49,7 @@ const Menu = [
         category: "back",
         date: "19-01-2021",
         link: "https://marutbarta.herokuapp.com/",
+        intro: "Readable and short introduction of this Projct",
         description: "It is a website-based forecast app where you can find today's weather details by searching City name."
     },
     {
@@ -51,6 +59,7 @@ const Menu = [
         category: "app",
         date: "19-01-2021",
         link: "https://marutbarta.herokuapp.com/",
+        intro: "Readable and short introduction of this Projct",
         description: "It is a website-based forecast app where you can find today's weather details by searching City name."
     },
     {
@@ -60,6 +69,7 @@ const Menu = [
         category: "front",
         date: "09-03-2021",
         link: "https://bajao-gana.ga/",
+        intro: "Readable and short introduction of this Projct",
         description: "This is a music app UI where you also play some music."
     },
     {
@@ -69,6 +79,7 @@ const Menu = [
         category: "back",
         date: "05-04-2021",
         link: "https://replchat.netlify.app/",
+        intro: "Readable and short introduction of this Projct",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
     },
     {
@@ -78,6 +89,7 @@ const Menu = [
         category: "app",
         date: "05-04-2021",
         link: "https://replchat.netlify.app/",
+        intro: "Readable and short introduction of this Projct",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
     },
     {
@@ -87,6 +99,7 @@ const Menu = [
         category: "upcoming",
         date: "29-03-2021",
         link: "#",
+        intro: "Readable and short introduction of this Projct",
         description: 'Lorem ipsum dolor sit amet consectetur.'
     },
     {
@@ -96,6 +109,7 @@ const Menu = [
         category: "upcoming",
         date: "12-04-2021",
         link: "#",
+        intro: "Readable and short introduction of this Projct",
         description: 'Lorem ipsum dolor sit amet consectetur.'
     },
     {
@@ -105,6 +119,7 @@ const Menu = [
         category: "upcoming",
         date: "25-05-2021",
         link: "#",
+        intro: "Readable and short introduction of this Projct",
         description: 'Virtual examination Web application for REPL Entrance. We are working on it'
     },
     {
@@ -114,8 +129,9 @@ const Menu = [
         category: "upcoming",
         date: "26-06-2021",
         link: "#",
+        intro: "Readable and short introduction of this Projct",
         description: 'Implimented todo list using redo undo and lots more feathers. We are working on it'
     }
 ];
 
-export default Menu;
+export default GalleryComp;

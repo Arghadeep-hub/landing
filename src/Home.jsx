@@ -2,15 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Footer from './Footer.jsx';
-import bird1 from './images/bird1.png';
-import bird2 from './images/bird2.png';
-import forest from './images/forest.png';
-import rocks from './images/rocks.png';
-import water from './images/water.png';
 import Lottie from 'react-lottie';
 import student from './json/student.json';
 import code from './json/codeblock.json';
-
 
 const aniStudent = {
     loop: true,
@@ -29,7 +23,7 @@ const aniCode = {
     }
 };
 
-function Home() {
+function Home({ bird1, bird2, forest, rocks, water }) {
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
     useEffect(() => {

@@ -88,10 +88,7 @@
   color: whitesmoke;
   outline: none;
 }
-.gallery .popup{
-  
-}
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1024px) {
   .gallery img{
     border-bottom-left-radius: 0px;
     border-top-right-radius: 12px;
