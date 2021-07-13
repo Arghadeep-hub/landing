@@ -123,7 +123,7 @@ const GalleryComp = [
         description: 'Virtual examination Web application for REPL Entrance. We are working on it'
     },
     {
-        id: 10,
+        id: 13,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkFCvCYg3PNYGBFfrCJSdo03RAOZed-iRpNWE-BvwKat4k_KglWfsQecLNdtMe5SICMnQ&usqp=CAU",
         name: "Todo List",
         category: "upcoming",

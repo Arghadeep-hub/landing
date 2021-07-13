@@ -1,4 +1,4 @@
-import { Avatar, IconButton } from '@material-ui/core';
+import { Avatar, Button, IconButton } from '@material-ui/core';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
@@ -24,7 +24,9 @@ const Navbar = ({ logo }) => {
 
                     <li onClick={handelClick} style={{ transition: 'all 0.5s ease 0.2s' }}><NavLink exact activeClassName="active" to="/contact"><IconButton>Contact</IconButton></NavLink></li>
 
-                    <li onClick={handelClick} style={{ transition: "all 0.5s ease 0.2s" }}><NavLink exact activeClassName="active" className="signup" to="/singup"><IconButton>Sign Up</IconButton></NavLink></li>
+                    <li style={{ transition: "all 0.5s ease 0.2s" }}>
+                        <Button href="https://repl-board.web.app" color="inherit" size="large" variant="outlined" className="signup">login</Button>
+                    </li>
                 </ul>
             </nav>
         </div>

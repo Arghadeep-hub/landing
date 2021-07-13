@@ -1,73 +1,75 @@
+import * as FaIcon from "react-icons/fa"
+
 const Features = [
     {
         id: 1,
-        icon: "fas fa-database",
+        icon: <FaIcon.FaDatabase />,
         name: "DataBase",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 3,
-        icon: "fas fa-laptop-code",
+        icon: <FaIcon.FaLaptopCode />,
         name: "Coding",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 4,
-        icon: "fas fa-pencil-ruler",
+        icon: <FaIcon.FaPencilRuler />,
         name: "Entrance Exam",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 5,
-        icon: "far fa-clipboard",
+        icon: <FaIcon.FaClipboardCheck />,
         name: "Notes",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 6,
-        icon: "fas fa-shield-alt",
+        icon: <FaIcon.FaShieldAlt />,
         name: "Certificate",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 7,
-        icon: "fab fa-html5",
+        icon: <FaIcon.FaHtml5 />,
         name: "HTML",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 8,
-        icon: "fab fa-css3-alt",
+        icon: <FaIcon.FaCss3Alt />,
         name: "CSS",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 9,
-        icon: "fab fa-js-square",
+        icon: <FaIcon.FaJsSquare />,
         name: "Java Script",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 10,
-        icon: "fab fa-node-js",
+        icon: <FaIcon.FaNodeJs />,
         name: "Node",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 11,
-        icon: "fab fa-react",
+        icon: <FaIcon.FaReact />,
         name: "React",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 12,
-        icon: "fab fa-python",
+        icon: <FaIcon.FaPython />,
         name: "Python",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     },
     {
         id: 13,
-        icon: "fab fa-figma",
+        icon: <FaIcon.FaFigma />,
         name: "Figma",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia minima placeat."
     }

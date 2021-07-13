@@ -20,16 +20,16 @@ function Project() {
             <div className="container-fluid mt-5 about-style">
                 <div className="row">
                     <div className="col-md-12 col-12 mx-auto">
-                        <h1 class="text-center main-heading">Explore</h1>
-                        <p class="text-center sub-heading">Show match with us</p>
+                        <h1 className="text-center main-heading">Explore</h1>
+                        <p className="text-center sub-heading">Show match with us</p>
                         <div className="row">
                             <div className="col-md-6 col-12">
                                 <Lottie options={aniProject} />
                             </div>
                             <div className="col-md-6 col-12 d-flex justify-content-center align-items-center flex-column">
-                                <div class="section-title">
-                                    <h1 class="title">Project</h1>
-                                    <h2 class="subtitle">Our Work Flow <hr /></h2>
+                                <div className="section-title">
+                                    <h1 className="title">Project</h1>
+                                    <h2 className="subtitle">Our Work Flow <hr /></h2>
                                 </div>
                                 <div className="intro-content">
                                     <h4>The two important things that we learn that "We are as powerful and strong as we allow yourself to be", and "The most challenging part of any endeavor is taking the first step, i.e.  making the first decision."</h4>

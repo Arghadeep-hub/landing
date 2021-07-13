@@ -14,7 +14,6 @@
   margin: 40px;
   width: 100%;
   max-width: 940px;
-  background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 21px 2px rgb(0, 0, 0, 0.1);
@@ -59,7 +58,12 @@
 }
 
 .container-contact form {
-  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
   position: relative;
   overflow: hidden;
   z-index: 10;
@@ -111,18 +115,19 @@
   width: 40%;
   padding: 8px 17px;
   font-size: 1rem;
-  color: #ddd;
-  background: #ffff;
-  border: 2px solid #fafafa;
+  color: yellowgreen;
+  border: 2px solid #ddd;
   border-radius: 25px;
   cursor: pointer;
   outline: none;
   transition: 0.3s;
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0.2rem 0.3rem 1rem rgba(1,2,3, 0.5);
 }
 
 .container-contact form .input-btn:hover {
   background: transparent;
-  color: #fff;
+  color: #ddd;
 }
 .contact-info {
   position: relative;

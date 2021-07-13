@@ -36,10 +36,6 @@ nav {
 .MuiIconButton-label{
   text-shadow: 0.2rem 0.3rem 1rem #111!important;
 }
-.signup .MuiIconButton-root {
-  color: #eee !important;
-  text-shadow: 15px 15px 15px 1px #ddd;
-}
 .signup {
   position: relative;
   left: 20px;

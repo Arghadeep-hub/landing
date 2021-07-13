@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
 import Home from './Home.jsx';
-import Singup from './Singup.jsx';
 import Navbar from './Navbar';
 import About from './About.jsx';
 import Project from './Project.jsx';
@@ -12,12 +11,12 @@ import Lottie from 'react-lottie';
 import * as cycle from './json/cycle-animation.json'
 import * as success from './json/success.json';
 
+const logo = "https://i.ibb.co/4sZ6pd7/logo.png"
 const bird1 = "https://i.ibb.co/c1ncXZf/bird1.png";
 const bird2 = "https://i.ibb.co/JnNY4Fy/bird2.png";
 const forest = "https://i.ibb.co/1J7GkVV/forest.png";
 const rocks = "https://i.ibb.co/jwDcS34/rocks.png";
 const water = "https://i.ibb.co/bvGmqsp/water.png";
-const logo = "https://i.ibb.co/4sZ6pd7/logo.png"
 
 const defaultOption1 = {
   loop: true,
@@ -66,7 +65,6 @@ function App() {
           <BrowserRouter>
             <Navbar logo={logo} />
             <Switch>
-              <Route exact path='/singup' component={Singup} />
               <Route exact path='/contact' component={Contact} />
               <Route exact path='/project' component={Project} />
               <Route exact path='/about' component={About} />

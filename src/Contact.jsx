@@ -1,15 +1,17 @@
 import React from 'react'
 import Footer from './Footer'
 import './Contact.css';
-import { IconButton } from '@material-ui/core';
+import { IconButton, Button } from '@material-ui/core';
+import * as FiIcon from 'react-icons/fi';
+
 function Contact() {
     return (
         <div className="contact">
             <div className="container-fluid mt-5 contact-style">
                 <div className="row">
                     <div className="col-md-12 col-12 mx-auto">
-                        <h1 class="text-center main-heading">Contact</h1>
-                        <p class="text-center sub-heading">Stay tuned with us</p>
+                        <h1 className="text-center main-heading">Contact</h1>
+                        <p className="text-center sub-heading">Stay tuned with us</p>
                         <div className="row">
                             <div className="col-md-6 col-12 sec1">
                             </div>
@@ -24,7 +26,7 @@ function Contact() {
                         <div className="map">
                             <iframe title="googlemap"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.5364405407695!2d88.41514321479247!3d22.596434685170458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275c718a01a0d%3A0x5db3ee28f1b792d5!2sMaulana%20Abul%20Kalam%20Azad%20University%20of%20Technology%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1621324628279!5m2!1sen!2sin"
-                                width="100%" height="200px" style={{ border: "0" }} allowfullscreen="" loading="lazy"></iframe>
+                                width="100%" height="200px" style={{ border: "0" }} allowFullScreen="" loading="lazy"></iframe>
                         </div>
                         <div className="contact-box">
                             <h3 className="title">Address</h3>
@@ -39,18 +41,21 @@ function Contact() {
                                     <p>repl.development@gmail.com</p>
                                 </div>
                                 <div className="information d-flex justify-content-center">
-                                    <IconButton><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></IconButton>
-                                    <IconButton><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></IconButton>
-                                    <IconButton><a href="https://github.com"><i class="fab fa-github"></i></a></IconButton>
+                                    <IconButton href="https://facebook.com"><FiIcon.FiFacebook color="#4267B2" /></IconButton>
+
+                                    <IconButton href="https://github.com"><FiIcon.FiGithub color="#333" /></IconButton>
+
+                                    <IconButton href="https://linkedin.com"><FiIcon.FiLinkedin color="#0077b5" /></IconButton>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div className="contact-form">
                         <span className="circle one"></span>
                         <span className="circle two"></span>
 
-                        <form action="index.html">
+                        <form>
                             <h3 className="title">Contact Us</h3>
                             <div className="input-container">
                                 <input type="text" name="name" className="input" placeholder="Name" required />
@@ -64,7 +69,7 @@ function Contact() {
                             <div className="input-container textarea">
                                 <textarea name="massaeg" className="input" placeholder="Message" required />
                             </div>
-                            <input type="submit" value="send" className="input-btn" />
+                            <Button type="submit" className="input-btn">Connect</Button>
                         </form>
                     </div>
                 </div>
