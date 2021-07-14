@@ -29,8 +29,12 @@ const GalleryComp = [
         date: "18-01-2021",
         link: "#",
         intro: "Readable and short introduction of this Projct",
-        description: <Typography>A successful website does three things: <br /> It attracts the right kinds of visitors. Guides them to the main services or product you offer. Collect Contact details for future ongoing relation.
-        </Typography>
+        description: <div>
+            <Typography align="center" color="inherit">A successful website does three things:</Typography>
+            <Typography>
+                It attracts the right kinds of visitors. Guides them to the main services or product you offer. Collect Contact details for future ongoing relation.
+            </Typography>
+        </div>
     },
     {
         id: 4,

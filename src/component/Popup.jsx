@@ -62,7 +62,7 @@ function Popup({ handleClose, open, name, description, link }) {
                 </Typography>
             </DialogContent>
             <DialogActions>
-                <Button href={link} autoFocus onClick={handleClose} variant="contained">
+                <Button href={link} autoFocus onClick={handleClose} color="inherit" variant="contained">
                     Preview
                 </Button>
             </DialogActions>

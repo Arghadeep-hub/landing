@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './About.css';
 import Footer from './Footer';
-import Features from './component/Features.js';
 import Carousel from './component/Carousel.js';
 
 function About() {
-    const [item] = useState(Features);
     return (
         <div className="about">
             <div className="container-fluid mt-5 about-style">
@@ -48,22 +46,9 @@ function About() {
                     </div>
                 </div>
                 <div className="row mt-3">
-                    {/*features item start*/}
-                    {
-                        item.map((elem) => {
-                            const { id, icon, name, text } = elem;
-                            return (
-                                <div className="col-md-6 col-lg-4 col-12 d-flex" key={id}>
-                                    <div className="col-lg-12 features-item">
-                                        <div className="icon"><i>{icon}</i></div>
-                                        <h3>{name}</h3>
-                                        <p>{text}</p>
-                                    </div>
-                                </div>
-                            )
-                        })
-                    }
-                    {/*features item ends*/}
+                    {/* item start*/}
+
+                    {/* item ends*/}
                 </div>
             </div>
             <Footer />

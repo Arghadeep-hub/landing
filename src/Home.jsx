@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import Footer from './Footer.jsx';
 import Lottie from 'react-lottie';
-import student from './json/student.json';
+import worker from './json/office-workers.json'
 import code from './json/codeblock.json';
 
-const aniStudent = {
+const aniWorker = {
     loop: true,
     autoplay: true,
-    animationData: student,
+    animationData: worker,
     rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
     }
@@ -54,7 +54,7 @@ function Home({ bird1, bird2, forest, rocks, water }) {
                                     <li><p>This web development community follows one unique motto "Let's Code Together". In a good spirit, We welcome all programmers to join us and showcase talent as well as grow with us.</p></li></ol>
                                 </div>
                                 <div className="sec2 col-md-6 col-12">
-                                    <Lottie options={aniStudent} />
+                                    <Lottie options={aniWorker} />
                                 </div>
                             </div>
                         </div>

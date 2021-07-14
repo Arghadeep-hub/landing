@@ -1,20 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from './Footer';
 import './Project.css'
+import Features from './component/Features.js';
 import Gallery from './component/Gallery.js';
-import Lottie from 'react-lottie';
-import project from './json/project-management.json';
 
-const aniProject = {
-    loop: true,
-    autoplay: true,
-    animationData: project,
-    rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice"
-    }
-};
 
 function Project() {
+    const [item] = useState(Features);
+
     return (
         <div>
             <div className="container-fluid mt-5 about-style">
@@ -23,12 +16,29 @@ function Project() {
                         <h1 className="text-center main-heading">Explore</h1>
                         <p className="text-center sub-heading">Show match with us</p>
                         <div className="row">
-                            <div className="col-md-6 col-12">
-                                <Lottie options={aniProject} />
+                            <div className="col-md-6 col-12 d-flex justify-content-center align-items-center flex-column">
+                                <div className="row mx-5">
+                                    <div className="section-title">
+                                        <div className="title">technologies</div>
+                                        <h2 className="subtitle pb-3"> Mostly used</h2>
+
+                                    </div>
+                                    {item.map((elem) => {
+                                        const { id, icon } = elem;
+                                        return (
+                                            <div className=" col-sm-6 col-md-6 col-lg-3 
+                                            col-4 d-flex justify-content-center align-items-center flex-wrap" key={id}>
+                                                <div className="col-lg-12 col-12 features-item">
+                                                    <div className="icon"><i>{icon}</i></div>
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
                             </div>
                             <div className="col-md-6 col-12 d-flex justify-content-center align-items-center flex-column">
                                 <div className="section-title">
-                                    <h1 className="title">Project</h1>
+                                    <div className="title">Project</div>
                                     <h2 className="subtitle">Our Work Flow <hr /></h2>
                                 </div>
                                 <div className="intro-content">
@@ -43,7 +53,9 @@ function Project() {
                     </div>
                 </div>
             </div>
-            <Gallery />
+            <div className="container-fluid mt-5 about-style">
+                <Gallery />
+            </div>
             <Footer />
         </div>
     )
