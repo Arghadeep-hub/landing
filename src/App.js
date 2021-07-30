@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
 import Home from './Home.jsx';
 import Navbar from './Navbar';
@@ -11,12 +11,20 @@ import Lottie from 'react-lottie';
 import * as cycle from './json/cycle-animation.json'
 import * as success from './json/success.json';
 
-const logo = "https://i.ibb.co/4sZ6pd7/logo.png"
+const logo = "https://i.ibb.co/s6NCmyM/REPL.png";
 const bird1 = "https://i.ibb.co/c1ncXZf/bird1.png";
 const bird2 = "https://i.ibb.co/JnNY4Fy/bird2.png";
 const forest = "https://i.ibb.co/1J7GkVV/forest.png";
 const rocks = "https://i.ibb.co/jwDcS34/rocks.png";
 const water = "https://i.ibb.co/bvGmqsp/water.png";
+const sourav = "https://i.ibb.co/qkNwc4j/sourav-karmakar.jpg"
+const argha = "https://i.ibb.co/Hrr4LwT/Arghadeep.jpg"
+const sumit = "https://i.ibb.co/H2v7QRH/Sumit-srkr.jpg"
+const pushpa = "https://i.ibb.co/chV28BZ/1613664803212.jpg"
+const sudhnashu = "https://i.ibb.co/qrJ6P8y/sudhanshu.jpg"
+const suman = "https://i.ibb.co/pnrj583/Suman-Ojha.png"
+const embrahim = "https://i.ibb.co/SQctM8b/ebrahim.jpg"
+const aman = "https://i.ibb.co/YtpRrXh/aman-Sharma.jpg"
 
 const defaultOption1 = {
   loop: true,
@@ -41,7 +49,7 @@ function App() {
   const [completed, setCompleted] = useState(undefined);
   useEffect(() => {
     setTimeout(() => {
-      fetch(bird1 || bird2 || forest || rocks || water || logo)
+      fetch(bird1 || bird2 || forest || rocks || water || logo || sourav || argha || sumit || pushpa || sudhnashu || suman || embrahim || aman)
         .then((response) => response.ok)
         .then((outBuff) => {
           setData(outBuff);
@@ -62,7 +70,7 @@ function App() {
               style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-50%, -50%)" }} height={300}
               width={300} />
       ) : <div className="page">
-          <BrowserRouter>
+          <Router>
             <Navbar logo={logo} />
             <Switch>
               <Route exact path='/contact' component={Contact} />
@@ -73,7 +81,7 @@ function App() {
               </Route>
               <Redirect to="/" />
             </Switch>
-          </BrowserRouter>
+          </Router>
       </div>
       }
     </div>

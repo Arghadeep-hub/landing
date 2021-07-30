@@ -5,9 +5,10 @@ import Popup from './Popup.jsx';
 
 
 function Gallery() {
-	const [items, setItems] = useState(Menu);
+	const [items, setItems] = useState([]);
 	const [open, setOpen] = useState(false);
 	const [popup, setPopup] = useState(null)
+
 
 	const handleClickOpen = (id) => {
 		setOpen(true);
@@ -23,6 +24,8 @@ function Gallery() {
 		});
 		setItems(updatedItems);
 	}
+
+
 
 
 	return (

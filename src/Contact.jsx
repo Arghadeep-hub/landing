@@ -1,10 +1,30 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 import Footer from './Footer'
 import './Contact.css';
 import { IconButton, Button } from '@material-ui/core';
 import * as FiIcon from 'react-icons/fi';
+import emailjs from 'emailjs-com';
 
 function Contact() {
+    const history = useHistory()
+    const serviceId = "service_6ansirk";
+    const templateId = "template_tbi6jxt";
+    const userId = "user_nkx8zDUlMyWBhS2vV3mJL";
+
+    const sendEmail = async (e) => {
+        e.preventDefault()
+
+        await emailjs.sendForm(serviceId, templateId, e.target, userId).then((result) => {
+            alert(`${result.text}! Submitted successfully. We'll catch you soon. Stay tuned with us.`)
+
+        }, (error) => {
+            alert(`Opps ${error.text}! We're sorry we couldn't send your message.`)
+        });
+
+        history.push("/")
+    }
+
     return (
         <div className="contact">
             <div className="container-fluid mt-5 contact-style">
@@ -55,21 +75,21 @@ function Contact() {
                         <span className="circle one"></span>
                         <span className="circle two"></span>
 
-                        <form>
+                        <form onSubmit={sendEmail}>
                             <h3 className="title">Contact Us</h3>
                             <div className="input-container">
-                                <input type="text" name="name" className="input" placeholder="Name" required />
+                                <input type="text" name="user_name" className="input" placeholder="Name" required />
                             </div>
                             <div className="input-container">
-                                <input type="email" name="email" className="input" placeholder="Email" required />
+                                <input type="user_email" name="email" className="input" placeholder="Email" required />
                             </div>
                             <div className="input-container">
-                                <input type="tel" name="phone" className="input" placeholder="Phone" required />
+                                <input type="tel" name="contact_number" className="input" placeholder="Phone Number" required />
                             </div>
                             <div className="input-container textarea">
-                                <textarea name="massaeg" className="input" placeholder="Message" required />
+                                <textarea name="message" className="input" placeholder="Message" required />
                             </div>
-                            <Button type="submit" className="input-btn">Connect</Button>
+                            <Button type="submit" className="input-btn">send</Button>
                         </form>
                     </div>
                 </div>

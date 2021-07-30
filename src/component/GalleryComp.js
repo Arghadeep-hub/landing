@@ -1,141 +1,126 @@
 import Typography from '@material-ui/core/Typography';
 
 const GalleryComp = [
+
     {
         id: 1,
-        image: "https://blog.corp-site.envato.com/cdn-cgi/image/width=1200,quality=95,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png",
-        name: "Profile",
+        image: "https://i2.wp.com/freefluttersource.com/wp-content/uploads/2020/08/flutter-bmi-calculator.jpg",
+        name: "BMI Calculator",
         category: "front",
-        date: "20-11-2020",
-        link: "/singup",
-        intro: "Readable and short introduction of this Projct",
-        description: "This is a Front-end project. Made by all community members"
+        date: "18-06-2021",
+        link: "#",
+        intro: "Calculate BMI",
+        description: <div>
+            <Typography align="center" color="inherit" variant="h6">A successful website does three things:</Typography>
+            <Typography>
+                Contributer: Suman Ojha && Aman Sharma <br />
+                Technologies: HTML5, CSS3, JavaScript <br />
+            </Typography>
+        </div>
     },
     {
         id: 2,
-        image: "https://images.squarespace-cdn.com/content/5893b891725e2570d8cbf215/1543614377243-VA9TSRDPQEMXTY8VS7LH/Dashboard_iphone8spacegrey_portrait.png?format=1500w&content-type=image%2Fpng",
-        name: "Dashboard",
-        category: "back",
-        date: "15-12-2021",
-        link: "#",
-        intro: "Readable and short introduction of this Projct",
-        description: "This is a Back-end Project. Made by our back-end developer."
+        image: "https://images-eu.ssl-images-amazon.com/images/I/411RqsooQ3L.png",
+        name: "Tic Tac Toe Game",
+        category: "front",
+        date: "18-06-2021",
+        link: "https://sksony-345.github.io/tik-tok-toe/",
+        intro: "Nostalgic Memories",
+        description: <div>
+            <Typography align="center" color="inherit">A successful website does three things:</Typography>
+            <br />
+            <Typography>
+                Contributer: Sudhanshu Kuman && Md. Ebrahim <br />
+                Technologies: HTML5, CSS3, JavaScript <br />
+            </Typography>
+        </div>
     },
     {
         id: 3,
-        image: "https://raw.githubusercontent.com/Arghadeep-hub/Portfolio/main/img/webdev.jpg",
-        name: "Web Dev",
+        image: "https://raw.githubusercontent.com/Arghadeep-hub/Portfolio/main/img/project2.png",
+        name: "Bajao Gana",
         category: "front",
         date: "18-01-2021",
-        link: "#",
-        intro: "Readable and short introduction of this Projct",
+        link: "https://bajao-gana.ga/",
+        intro: "Change the mood",
         description: <div>
-            <Typography align="center" color="inherit">A successful website does three things:</Typography>
+            <Typography align="center" color="inherit">Music Player:</Typography>
+            <br />
             <Typography>
-                It attracts the right kinds of visitors. Guides them to the main services or product you offer. Collect Contact details for future ongoing relation.
+                Contributer: Arghdeep Mallick <br />
+                Technologies: HTML5, CSS3, JavaScript <br />
             </Typography>
         </div>
     },
     {
         id: 4,
-        image: "https://raw.githubusercontent.com/Arghadeep-hub/Portfolio/main/img/project3.png",
-        name: "Calculator",
-        category: "front",
-        date: "16-02-2021",
-        link: "https://arghadeep-hub.github.io/calculator/",
-        intro: "Readable and short introduction of this Projct",
-        description: "Measuring programming progress by lines of code is like measuring aircraft building progress by weight."
+        image: "https://raw.githubusercontent.com/Arghadeep-hub/Portfolio/main/img/project6.png",
+        name: "Marutbarta",
+        category: "back",
+        date: "18-01-2021",
+        link: "https://marutbarta.herokuapp.com/weather",
+        intro: "Weather App",
+        description: <div>
+            <Typography align="center" color="inherit" variant="h6">Weather forecast:</Typography>
+            <br />
+            <Typography>
+                Contributer: Arghadeep Mallick <br />
+                Technologies: Bootstrap, Node.js, Express.js, HBS, Heroku<br />
+            </Typography>
+        </div>
     },
     {
         id: 5,
-        image: "https://raw.githubusercontent.com/Arghadeep-hub/Portfolio/main/img/project6.png",
-        name: "Weather App",
-        category: "back",
-        date: "19-01-2021",
-        link: "https://marutbarta.herokuapp.com/",
-        intro: "Readable and short introduction of this Projct",
-        description: "It is a website-based forecast app where you can find today's weather details by searching City name."
-    },
-    {
-        id: 12,
-        image: "https://assets.materialup.com/uploads/6bd67883-a89f-4d04-b3e1-1d9e61d64e14/preview.png",
-        name: "Forecast App",
+        image: "https://ubiq.co/analytics-blog/wp-content/uploads/2020/04/components-of-successful-dashboard-730x410.png",
+        name: "Dashboard",
         category: "app",
-        date: "19-01-2021",
-        link: "https://marutbarta.herokuapp.com/",
-        intro: "Readable and short introduction of this Projct",
-        description: "It is a website-based forecast app where you can find today's weather details by searching City name."
+        date: "18-01-2021",
+        link: "https://repl-board.web.app/",
+        intro: "REPL Dashboard.",
+        description: <div>
+            <Typography align="center" color="inherit" variant="h6">This is our community Dashboars system:</Typography>
+            <br />
+            <Typography>
+                Contributer: Arghadeep Mallick, Sumit Sarkar, Pushpa Kumari<br />
+                Technologies: React.js, Redux, Axios, Chart.js, Notistack, styled-components, uuidv4, Formik, Firebase<br />
+            </Typography>
+        </div>
     },
     {
         id: 6,
-        image: "https://raw.githubusercontent.com/Arghadeep-hub/Portfolio/main/img/project2.png",
-        name: "Music Player",
-        category: "front",
-        date: "09-03-2021",
-        link: "https://bajao-gana.ga/",
-        intro: "Readable and short introduction of this Projct",
-        description: "This is a music app UI where you also play some music."
+        image: "https://tiimg.tistatic.com/fp/1/006/818/online-exam-portal-software-development-service-473.jpg?tr=n-w410",
+        name: "Student Admission",
+        category: "upcoming",
+        date: "18-01-2021",
+        link: "https://repl-board.web.app/",
+        intro: "Admission Examination Portal.",
+        description: <div>
+            <Typography align="center" color="inherit" variant="h6">This is REPL Entrance Examination Portal:</Typography>
+            <br />
+            <Typography>
+                Contributer: Arghadeep Mallick, Suman Ojha, Sudhanshu Kumar, Sumit Sarkar, Pushpa Kumari, Md. Ebrahim, Aman Sharma  <br />
+                Technologies: React.js, Node.js, Express.js, MongoDB<br />
+            </Typography>
+        </div>
     },
     {
         id: 7,
-        image: "https://assets.materialup.com/uploads/87c8669d-72b3-47e8-86bc-165000ed763f/chat-interaction--playing2.gif",
-        name: "Chat Applicaton",
-        category: "back",
-        date: "05-04-2021",
-        link: "https://replchat.netlify.app/",
-        intro: "Readable and short introduction of this Projct",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-    },
-    {
-        id: 11,
-        image: "https://premio.io/wp-content/uploads/2019/08/screenshot-6.png",
-        name: "REPL Chat",
-        category: "app",
-        date: "05-04-2021",
-        link: "https://replchat.netlify.app/",
-        intro: "Readable and short introduction of this Projct",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-    },
-    {
-        id: 8,
-        image: "https://1xqdqy285sk7212bfiejcprr-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/Web-Development-Company-USA.jpg",
-        name: "Analysis",
+        image: "https://img.jakpost.net/c/2020/06/22/2020_06_22_98369_1592789382._large.jpg",
+        name: "Covid Tracker",
         category: "upcoming",
-        date: "29-03-2021",
-        link: "#",
-        intro: "Readable and short introduction of this Projct",
-        description: 'Lorem ipsum dolor sit amet consectetur.'
+        date: "18-01-2021",
+        link: "https://repl-board.web.app/",
+        intro: "This is our community Dashboard.",
+        description: <div>
+            <Typography align="center" color="inherit" variant="h6">Covid Tracker:</Typography>
+            <br />
+            <Typography>
+                Contributer:  Suman Ojha, Sudhanshu Kumar, Md. Ebrahim, Aman Sharma<br />
+                Technologies: HTML5, CSS3, Javascript<br />
+            </Typography>
+        </div>
     },
-    {
-        id: 9,
-        image: "https://thumbs.dreamstime.com/z/online-survey-form-online-survey-form-tablet-screen-index-finger-customer-service-feedback-concept-vector-98506218.jpg",
-        name: "E-commerce",
-        category: "upcoming",
-        date: "12-04-2021",
-        link: "#",
-        intro: "Readable and short introduction of this Projct",
-        description: 'Lorem ipsum dolor sit amet consectetur.'
-    },
-    {
-        id: 10,
-        image: "https://media.istockphoto.com/vectors/survey-online-form-or-exam-document-and-test-quiz-checklist-results-vector-id1223758304",
-        name: "Examination",
-        category: "upcoming",
-        date: "25-05-2021",
-        link: "#",
-        intro: "Readable and short introduction of this Projct",
-        description: 'Virtual examination Web application for REPL Entrance. We are working on it'
-    },
-    {
-        id: 13,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkFCvCYg3PNYGBFfrCJSdo03RAOZed-iRpNWE-BvwKat4k_KglWfsQecLNdtMe5SICMnQ&usqp=CAU",
-        name: "Todo List",
-        category: "upcoming",
-        date: "26-06-2021",
-        link: "#",
-        intro: "Readable and short introduction of this Projct",
-        description: 'Implimented todo list using redo undo and lots more feathers. We are working on it'
-    }
+
 ];
 
 export default GalleryComp;

@@ -2,12 +2,12 @@ const Member = [
     {
         id: 1,
         name: "Sourav Karmakar",
-        position: "Head",
+        position: "Community Head",
         image: "https://i.ibb.co/qkNwc4j/sourav-karmakar.jpg",
         comment: "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
-        facebook: "https://facebook.com",
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        facebook: "https://www.facebook.com/sourav.karmakar.9699",
+        linkedin: "https://www.linkedin.com/in/sourav-karmakar-92b501144/",
+        github: "https://github.com/phoenix-404"
     },
     {
         id: 2,
@@ -15,9 +15,9 @@ const Member = [
         position: "Associate Heade",
         image: "https://i.ibb.co/Hrr4LwT/Arghadeep.jpg",
         comment: "Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.",
-        facebook: "https://facebook.com",
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        facebook: "https://www.facebook.com/profile.php?id=100009453540775",
+        linkedin: "https://www.linkedin.com/in/arghadeep-mallick-77809a1a5/",
+        github: "https://github.com/Arghadeep-hub"
     },
     {
         id: 3,
@@ -25,16 +25,16 @@ const Member = [
         position: "Backend Heade",
         image: "https://i.ibb.co/H2v7QRH/Sumit-srkr.jpg",
         comment: "If debugging is the process of removing software bugs, then programming must be the process of putting them in and It’s not a bug. It’s an undocumented feature!",
-        facebook: "https://facebook.com",
-        linkedin: "https://linkedin.com",
+        facebook: "https://www.facebook.com/spykarsumit",
+        linkedin: "https://www.linkedin.com/in/sumitskr/",
         github: "https://github.com"
     },
     {
         id: 4,
-        name: "Pushpa Kumari",
+        name: "Pushpa Kumari ",
         position: "Frontend Head",
         image: "https://i.ibb.co/chV28BZ/1613664803212.jpg",
-        comment: "Things aren’t always #000000 and #FFFFFF",
+        comment: "while(noSuccess){ practice; if(tired) break;} ",
         facebook: "https://www.facebook.com/profile.php?id=100028588115288",
         linkedin: "https://www.linkedin.com/in/pushpa-kumari-62491516a/",
         github: "https://github.com/pushpakumari5117"
@@ -42,42 +42,42 @@ const Member = [
     {
         id: 5,
         name: "Sudhanshu Kumar",
-        position: "project manager",
+        position: "Project researcher",
         image: "https://i.ibb.co/qrJ6P8y/sudhanshu.jpg",
-        comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias a error, perspiciatis et quis molestiae officiis repellendus quasi doloribus nostrum, odio expedita dolorem aspernatur. Illo corrupti mollitia assumenda ipsam accusantium?",
-        facebook: "https://facebook.com",
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        comment: "Let us take you into a deeper experience, make a moment a lasting conveyable memory. Let us help build your tribe.",
+        facebook: "https://www.facebook.com/profile.php?id=100009289709621",
+        linkedin: "https://www.linkedin.com/in/sudhanshu-kumar-9319421b0/",
+        github: "https://github.com/sksony-234"
     },
     {
         id: 6,
         name: "Suman Ojha",
         position: "Project Manager",
         image: "https://i.ibb.co/pnrj583/Suman-Ojha.png",
-        comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias a error, perspiciatis et quis molestiae officiis repellendus quasi doloribus nostrum, odio expedita dolorem aspernatur. Illo corrupti mollitia assumenda ipsam accusantium?",
-        facebook: "https://facebook.com",
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        comment: "Software undergoes beta testing shortly before it’s released. Beta is Latin for ‘still doesn’t work.",
+        facebook: "https://www.facebook.com/suman.ojha.9028",
+        linkedin: "https://www.linkedin.com/in/suman-ojha-533a171a2/",
+        github: "https://github.com/Suman-ojha"
     },
     {
         id: 7,
         name: "Md. Ebrahim",
         position: "Developer",
         image: "https://i.ibb.co/SQctM8b/ebrahim.jpg",
-        comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias a error, perspiciatis et quis molestiae officiis repellendus quasi doloribus nostrum, odio expedita dolorem aspernatur. Illo corrupti mollitia assumenda ipsam accusantium?",
-        facebook: "https://facebook.com",
+        comment: "It’s not a bug. It’s an undocumented feature!",
+        facebook: "https://www.facebook.com/ebrahim742148",
         linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        github: "https://github.com/mdebrahim98"
     },
     {
         id: 8,
         name: "Aman Sharma",
         position: "Developer",
         image: "https://i.ibb.co/YtpRrXh/aman-Sharma.jpg",
-        comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias a error, perspiciatis et quis molestiae officiis repellendus quasi doloribus nostrum, odio expedita dolorem aspernatur. Illo corrupti mollitia assumenda ipsam accusantium?",
-        facebook: "https://facebook.com",
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        comment: "Software always remain softly for End users! But sometimes hardly to developers!",
+        facebook: "#",
+        linkedin: "https://www.linkedin.com/in/aman-sharma-5aa4481a2/",
+        github: "https://github.com/sirdroj"
     }
 ]
 export default Member;

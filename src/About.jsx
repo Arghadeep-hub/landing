@@ -2,6 +2,7 @@ import React from 'react';
 import './About.css';
 import Footer from './Footer';
 import Carousel from './component/Carousel.js';
+import FaqTabs from './component/FaqTabs';
 
 function About() {
     return (
@@ -36,18 +37,18 @@ function About() {
                 </div>
             </div>
             {/* Another Division */}
-            <div className="container features-section">
+            <div className="container-fluid features-section">
                 <div className="row justify-content-center">
                     <div className="col-md-6 col-12">
                         <div className="section-title">
-                            <h1 className="title">Features</h1>
-                            <h2 className="subtitle">Commonly we work on</h2>
+                            <h1 className="title">queries</h1>
+                            <h2 className="subtitle">frequently asked questions</h2>
                         </div>
                     </div>
                 </div>
-                <div className="row mt-3">
+                <div className="row">
                     {/* item start*/}
-
+                    <FaqTabs />
                     {/* item ends*/}
                 </div>
             </div>
